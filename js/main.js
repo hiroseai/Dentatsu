@@ -17,6 +17,10 @@ $('.fadeInLeft').waypoint({
     if (direction === 'down') {
       $(this.element).addClass('animate__fadeInLeft');
       this.destroy();
+      const el = document.querySelector(".voice-layer");
+      const styleEl = getComputedStyle(el);
+      console.log(styleEl.width);
+      console.log(styleEl.height);
     }
   },
   offset: '50%',
@@ -27,6 +31,10 @@ $('.fadeInRight').waypoint({
     if (direction === 'down') {
       $(this.element).addClass('animate__fadeInRight');
       this.destroy();
+      const el = document.querySelector(".voice-layer");
+      const styleEl = getComputedStyle(el);
+      console.log(styleEl.width);
+      console.log(styleEl.height);
     }
   },
   offset: '50%',
