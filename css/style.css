@@ -222,7 +222,7 @@ li {
     display: flex;
     flex-direction: row-reverse;
     margin: 0 0 0 auto;
-    padding: 75.2px 0 75.2px 0;
+    padding: 75.5px 0 75.5px 0;
 }
 
 .voice-box-image {
@@ -311,10 +311,22 @@ li {
 
 .voice-layer {
     position: relative;
+    width: calc((100% - 1080px) / 2 + 40px + 1000px);
+    height: 296px;
 }
 
-.voice-box {
+.voice-layer-two {
     position: relative;
+    width: calc((100% - 1080px) / 2 + 40px + 1000px);
+    height: 283px;
+}
+
+.voice-box-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -322,13 +334,8 @@ li {
     position: absolute;
     left: 0;
     top: 0;
-    width: calc((100% - 1080px) / 2 + 40px + 1000px);
-    height: 296px;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     background: #ffffff;
-}
-
-.fade-layer-two {
-    width: calc((100% - 1080px) / 2 + 40px + 1000px);
-    height: 282.38px;
 }
